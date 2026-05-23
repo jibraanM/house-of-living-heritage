@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C4A574"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer arch  evoking traditional Emirati architecture -->
+  <path d="M60 8 C28 8 12 32 12 52 L12 108 L108 108 L108 52 C108 32 92 8 60 8Z" 
+        stroke="#3D3428" stroke-width="1.5" fill="#E8DCC8"/>
+  <!-- Inner arch detail -->
+  <path d="M60 22 C38 22 26 40 26 54 L26 96 L94 96 L94 54 C94 40 82 22 60 22Z" 
+        stroke="#8B6914" stroke-width="1" fill="none" opacity="0.6"/>
+  <!-- Geometric heritage motif  eight-point star -->
+  <g transform="translate(60, 58)" stroke="url(#goldGrad)" stroke-width="1.2" fill="none">
+    <path d="M0 -22 L6 -6 L22 0 L6 6 L0 22 L-6 6 L-22 0 L-6 -6 Z"/>
+    <path d="M0 -14 L4 -4 L14 0 L4 4 L0 14 L-4 4 L-14 0 L-4 -4 Z" opacity="0.5"/>
+    <circle cx="0" cy="0" r="4" fill="#8B6914" stroke="none"/>
+  </g>
+  <!-- Doorway base -->
+  <path d="M44 96 L44 72 C44 62 50 56 60 56 C70 56 76 62 76 72 L76 96" 
+        stroke="#3D3428" stroke-width="1.2" fill="none"/>
+</svg>
