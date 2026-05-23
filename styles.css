@@ -404,13 +404,23 @@ address {
   text-align: center;
 }
 
+.intro-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 1.5rem;
+}
+
 .intro-quote {
   font-family: var(--font-serif);
-  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
   font-weight: 400;
   font-style: italic;
-  line-height: 1.5;
-  max-width: 42ch;
+  line-height: 1.55;
+  max-width: 58ch;
   margin-inline: auto;
   color: var(--beige-200);
 }
@@ -481,6 +491,28 @@ address {
   line-height: 1.5;
 }
 
+.vision-mission {
+  display: grid;
+  gap: 1.75rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--beige-300);
+}
+
+.vm-block h3 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--brown-900);
+  margin-bottom: 0.5rem;
+}
+
+.vm-block p {
+  font-size: 0.95rem;
+  color: var(--brown-600);
+  line-height: 1.65;
+}
+
 /* ─── Conservation Services ─── */
 .conservation {
   background: var(--beige-100);
@@ -525,6 +557,18 @@ address {
   font-size: 0.92rem;
   color: var(--brown-600);
   line-height: 1.65;
+}
+
+.systems-quote {
+  margin-top: clamp(3rem, 6vw, 4rem);
+  padding: clamp(2rem, 4vw, 2.75rem);
+  border-left: 2px solid var(--gold-light);
+  font-family: var(--font-serif);
+  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+  font-style: italic;
+  color: var(--brown-700);
+  line-height: 1.55;
+  max-width: 52ch;
 }
 
 /* ─── Approach ─── */
@@ -589,6 +633,136 @@ address {
   font-size: 0.82rem;
   letter-spacing: 0.06em;
   color: var(--beige-300);
+}
+
+/* ─── Regions ─── */
+.regions {
+  background: var(--beige-50);
+}
+
+.regions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.region-card {
+  padding: clamp(2rem, 4vw, 2.5rem);
+  background: var(--white);
+  border: 1px solid var(--beige-300);
+  transition: border-color 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+.region-card:hover {
+  border-color: var(--gold-pale);
+  box-shadow: 0 8px 32px var(--shadow);
+}
+
+.region-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--brown-900);
+  margin-bottom: 0.35rem;
+}
+
+.region-sub {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.region-card p {
+  font-size: 0.92rem;
+  color: var(--brown-600);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+.region-nodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.region-nodes li {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.75rem;
+  background: var(--beige-100);
+  color: var(--brown-700);
+  border: 1px solid var(--beige-300);
+}
+
+/* ─── How We Work ─── */
+.how-we-work {
+  background: var(--beige-200);
+}
+
+.ethics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.ethics-card {
+  padding: clamp(2rem, 4vw, 2.75rem);
+  background: var(--beige-50);
+  border: 1px solid var(--beige-400);
+}
+
+.ethics-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--brown-900);
+  margin-bottom: 1.25rem;
+}
+
+.ethics-card p {
+  font-size: 0.92rem;
+  color: var(--brown-600);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.ethics-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.ethics-card li {
+  font-size: 0.88rem;
+  color: var(--brown-700);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.ethics-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 4px;
+  height: 4px;
+  background: var(--gold-light);
+  border-radius: 50%;
+}
+
+.involve-closing {
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  font-style: italic;
+  color: var(--brown-700);
+  max-width: 52ch;
+  margin-inline: auto;
 }
 
 /* ─── Projects ─── */
@@ -686,6 +860,25 @@ address {
   border-color: var(--gold);
 }
 
+.contact-channels {
+  margin-top: 1.5rem;
+  font-size: 0.88rem;
+  color: var(--brown-600);
+  line-height: 1.9;
+}
+
+.contact-channels strong {
+  color: var(--brown-800);
+  font-weight: 500;
+}
+
+.optional {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
 .contact-form {
   background: var(--white);
   padding: clamp(2rem, 4vw, 2.75rem);
@@ -766,6 +959,26 @@ address {
   color: var(--beige-400);
 }
 
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem 2rem;
+  margin: 0.75rem 0;
+}
+
+.footer-nav a {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--beige-400);
+  transition: color 0.3s var(--ease);
+}
+
+.footer-nav a:hover {
+  color: var(--gold-light);
+}
+
 .footer-copy {
   font-size: 0.72rem;
   letter-spacing: 0.06em;
@@ -797,7 +1010,9 @@ address {
 
   .about-grid,
   .approach-grid,
-  .contact-grid {
+  .contact-grid,
+  .regions-grid,
+  .ethics-grid {
     grid-template-columns: 1fr;
   }
 
